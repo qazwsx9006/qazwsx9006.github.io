@@ -1,0 +1,213 @@
+
+
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	.my_info{
+		width: 30%;
+		height: 100%;
+		float: left;
+		overflow-y:auto; 
+		overflow-x:hidden; 
+	}
+	.my_info section{
+		height: 30%;
+		text-align: center;
+		min-height: 200px;
+		position: relative;
+	}
+	.my_info section:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background: #aaa;
+		left: 0;
+		bottom: 0;
+	}
+	.my_info section:first-child{
+		height: 40%;
+		min-height: 270px;
+	}
+	.my_info .avatar{
+		display: inline-block;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-top: 10px;
+	}
+	.my_info h2{
+		margin-top: 10px;
+		font-size: 7rem;
+		font-family: 'Playball', cursive;
+	}
+	.my_info .tech{
+		margin-top: 15px;
+		position: relative;
+		font-size: 2rem;
+	}
+	.my_info .tech li{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		-webkit-animation: Fade 12s linear infinite; 
+	}
+	.my_info .tech li:nth-child(1){
+		 -webkit-animation-delay: .5s
+	}
+	.my_info .tech li:nth-child(2){
+		 -webkit-animation-delay: 4.5s
+	}
+	.my_info .tech li:nth-child(3){
+		 -webkit-animation-delay: 8.5s
+	}
+
+	.my_info .say_something:before{
+		content: '';
+		display: inline-block;
+		width: 0;
+		margin-left: -5px;
+		height: 100%;
+		background: #000;
+		vertical-align: middle;
+	}
+	.say_something div{
+		display: inline-block;
+		width: 80%;
+		max-width: 250px;
+		vertical-align: middle;
+	}
+	.my_info .hi{
+		float: left;
+		font-size: 5rem;
+		margin:-8px 7px 0 0;
+	}
+	.my_info .msg{
+		font-size: 15px;
+		line-height: 20px;	
+	}
+
+	.social:before{
+		content: '';
+		display: inline-block;
+		width: 0;
+		margin-left: -5px;
+		height: 100%;
+		background: #000;
+		vertical-align: middle;
+	}
+	.social a{
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		font-size: 30px;
+		text-decoration: none;
+	}
+	.social .fb_a{
+		background: #4676b2;
+	}
+	.social .fb_a:hover{
+		background: #719ac6;
+	}
+	.social .gh_a{
+		background: #8594a5;
+	}
+	.social .gh_a:hover{
+		background: #b5bfc6;
+	}
+	.social .google_a{
+		background: #d8481d;
+	}
+	.social .google_a:hover{
+		background: #d87b56;
+	}
+
+	@-webkit-keyframes Fade { 
+	  0% { opacity:0;}
+	  5% {opacity:1;}
+	  25% {opacity: 1;}
+	  32% {opacity: 0;}
+	  100% {opacity:0;}
+	}
+
+	.profile{
+		width: 70%;
+		height: 100%;
+		float: left;
+		position: relative;
+	}
+	.profile section{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+	}
+	.profile .flag{
+		height: 100%;
+		width: 25%;
+		float: left;
+		cursor: pointer;
+		background: #4da06a;
+		position: relative;
+	}
+	.profile .flag:nth-child(2){
+		background: #70a080;
+	}
+	.profile .flag:nth-child(3){
+		background: #8bbe9a;
+	}
+	.profile .flag:nth-child(4){
+		background: #9fbea9;
+	}
+	.profile h3{
+		text-align: center;
+		color: #fff;
+		font-size: 4rem;
+		padding: 30px;
+	}
+	.flag:hover h3,.flag:hover .fa{
+		text-shadow:0 0 3px #fff; 
+	}
+	.profile h3:after{
+		display: block;
+		content:attr(data-eng);
+		color: #fff;
+		font-size: 2rem;
+		width: 100%;
+		margin-top: -20px;
+		opacity: 0;
+		transition:.3s;
+	}
+	.flag:hover h3:after{
+		text-shadow:0 0 3px #fff; 
+		margin-top: 10px;
+		opacity: 1;
+	}
+	.flag .fa{
+		position: absolute;
+		width: 100%;
+		bottom: 30px;
+		text-align: center;
+		font-size: 6rem;
+		color: #fff;
+	}
+
+
+
+
+
+
+
+
+
+
+
