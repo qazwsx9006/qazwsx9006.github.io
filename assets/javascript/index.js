@@ -23,3 +23,19 @@ function sayMsg(){
 		}, speed);
 	}
 };
+
+
+function indexSlide(){
+	$('.flag').click(function(){
+		var index = $(this).index(),
+			$content = $('.profile').find('.content').eq(index);
+			$content.find('.close').addClass('open');
+			$content.addClass('show');
+			$('#flags').fadeOut();
+	});
+	$('.close').click(function(){
+		$(this).removeClass('open');
+		$('.profile').find('.content.show').removeClass('show');
+		$('#flags').fadeIn();
+	});
+}
