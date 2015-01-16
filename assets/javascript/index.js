@@ -39,3 +39,20 @@ function indexSlide(){
 		$('#flags').fadeIn();
 	});
 }
+
+
+function portfolio(){
+	$('.portfolio').find('.filter').find('li').click(function(){
+		$('.portfolio').find('.filter').find('li').removeClass('active');
+		$(this).addClass('active');
+		var target = $(this).attr('data-filter');
+		if(target=='all'){
+			$('.portfolio').find('.works').find('li').removeClass('hide');	
+		}else{
+			$('.portfolio').find('.works').find('li').addClass('hide').delay(300).queue(function(){
+			    $(this).addClass("none").dequeue();
+			});;
+			$('.portfolio').find('.works').find('.'+target).removeClass('hide');	
+		}
+	});
+}
