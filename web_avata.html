@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Tseng_Ming_Yu</title>
+	<link href="assets/styles/reset.css" media="screen" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/styles/index.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/javascript/index.js"></script>
+</head>
+<body>
+	<div class="my_info">
+		<section class="info">
+			<div class="avatar">
+				<img src="assets/images/tmy.jpg" alt="">
+			</div>
+			<h2>Mingyu</h2>
+			<ul class="tech">
+				<li>Front-End Developer</li>
+				<li>Web Desiginer</li>
+				<li>Ruby on Rails Developer</li>
+			</ul>
+		</section>
+		<section class="say_something">
+			<div>
+				<span class="hi">嗨</span>
+				<span class="msg say" data-msg="你好，我是名煜。是個前後端工程師。目前主要以 Ruby on Rails做網站開發。平常興趣是上網、享受美食、在家發懶。也會參與研討會，社群。" data-speed="200">
+				</span>
+			</div>
+		</section>
+		<section class="social">
+			<a class="fb_a" href="https://www.facebook.com/qazwsx9006"><i class="fa fa-facebook-square"></i></a>
+			<a class="gh_a" href="https://github.com/qazwsx9006"><i class="fa fa-github-square"></i></a>
+			<a class="google_a" href="javascript:;"><i class="fa fa-google-plus-square"></i></a>
+		</section>
+	</div>
+	<article class="blog">
+		<h3>文章分享</h3>
+		<h4>avata 魚菜共生 網站</h4>
+		<ul class="articleInfo">
+			<li><i class="fa fa-calendar"></i> 2011-01-01</li>
+			<li><i class="fa fa-pencil"></i> Ming yu</li>
+			<li><i class="fa fa-tags"></i> web</li>
+		</ul>
+		<section class="web">
+			<div class="blog_pics">
+				<img src="assets/images/avata_index1.png" alt="">
+			</div>
+			<p>
+				[前言...]<br/>
+				經過ㄧ年海軍陸戰隊的洗禮後，重新回到人間，面對現實社會。<br/>
+				剛退伍，對於人生的不安，未來得不確定感到惶恐。看看周遭的朋友，再看看自己。<br/>
+				發現自己好像沒有什麼可以搬上檯面的技能。肚子裡好像也都沒什麼墨水了。<br/>
+				此時，有位好友推薦我可以再去資策會進修、學習技能。</br>
+				雖然學費高達十萬，但可以利用政府的「青年就業讚」計劃全額補助。</br>
+				深感沒有時間可以讓我蹉跎了，因此立馬申請補助資格，並且報名了資策會的課程。<br/>
+				(類似「多媒體網頁設計班」，但是實際課名我忘了，學習內容就是adobe軟體技能，網頁設計，
+				程式碼 - javascript、jQuery、HTML、CSS、PHP，大致上就這些。)<br/>
+				大約半年的課程即將結束時，每組人馬會需要製作一個網頁專題。我們這組三個男生決定的專題主題是
+				「魚菜共生」，由組長和實際農場接洽後，開發該網站。並計劃於專題結束後，將網站移交給該農場。<br/>
+			</p>
+			<br/>
+			<p>
+				該網站使用PHP+mysql+phpmyadmin，最終架設在智邦的主機上。<br/>
+				因為是第一次接觸code，第一次寫網站。所以使用的PHP並無使用任何framework。<br/>
+				--以上是廢話--
+			</p>
+			<br/>
+			<p>
+				首頁為了活潑有趣點，採用視差捲動的動畫呈現。首頁分為四個部分向大家介紹有關 avata魚菜共生。<br/>
+				該頁面使用了 <a href="http://prinzhorn.github.io/skrollr/">skrollr</a> 套件來製作出視差捲動的動畫效果。(參考下面圖片以及影片)
+			</p>
+			<div class="blog_pics groups">
+				<img src="assets/images/avata_index1.png" alt="">
+				<img src="assets/images/avata_index2.png" alt="">
+				<img src="assets/images/avata_index3.png" alt="">
+				<img src="assets/images/avata_index4.png" alt="">
+			</div>
+			<iframe width="480" height="360" src="//www.youtube.com/embed/ShqE_4w4IWg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+			<p>
+				未完待續...
+			</p>
+		</section>
+	</article>
+	<script>
+	$(function(){
+		sayMsg();indexSlide();portfolio();
+	})
+	</script>
+</body>
+</html>
