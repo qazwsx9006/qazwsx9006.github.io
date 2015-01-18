@@ -17,16 +17,25 @@
 		background: #fff;
 	}
 	.my_info section{
-		height: 30%;
+		height:30%;
 		text-align: center;
 		min-height: 200px;
 		position: relative;
 		border: 1px solid #aaa;
 		border-width: 0 1px 1px 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	.my_info section:first-child{
 		height: 40%;
-		min-height: 270px;
+		min-height: 260px;
+	}
+	.my_info section:last-child{
+		height:30%;
+		min-height: 100px;
 	}
 	.my_info .avatar{
 		display: inline-block;
