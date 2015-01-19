@@ -4,7 +4,16 @@
 		width: 50%;
 	}
 }
-
+@media screen and (min-width: 160px) and (max-width: 420px){
+	.profile .flag{
+		height: 25%;
+		width: 100%;
+		font-weight: 900;
+	}
+	.profile .flag .fa{
+		opacity: .2;
+	}
+}
 
 @media screen and (min-width: 160px) and (max-width: 750px){
 	.my_info{
@@ -14,6 +23,10 @@
 		cursor:pointer;
 		transition: .3s;
 	}
+	.my_info.my_info2{
+		height: 130px;
+		border-bottom: 1px solid #999;
+	}
 	.my_info.rwd_height{
 		height: 100%;
 		overflow-y: auto;
@@ -21,8 +34,9 @@
 	.my_info .info{
 		height: 260px;
 	}
-	.profile{
+	.profile,.blog{
 		width: 100%;
 		height: 80%;
+		box-shadow: inset  0 0 10px #666;
 	}
 }
