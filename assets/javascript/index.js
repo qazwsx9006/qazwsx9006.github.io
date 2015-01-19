@@ -56,3 +56,9 @@ function portfolio(){
 		}
 	});
 }
+
+function rwd_index(){
+	$('.my_info').click(function(){
+		$('.my_info').toggleClass('rwd_height');
+	});
+}

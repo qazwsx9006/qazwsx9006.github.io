@@ -2,11 +2,13 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1">
 	<title>I'm Tseng Mingyu</title>
 	<link href="assets/styles/reset.css" media="screen" rel="stylesheet" />
 	<link href='//fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/styles/index.css" rel="stylesheet">
+	<link href="assets/styles/rwd.css" rel="stylesheet" />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="assets/javascript/index.js"></script>
 
@@ -37,7 +39,7 @@
 		<section class="say_something">
 			<div>
 				<span class="hi">嗨</span>
-				<span class="msg say" data-msg="你好，我是名煜。是個前後端工程師。目前主要以 Ruby on Rails做網站開發。平常興趣是上網、享受美食、在家發懶。也會參與研討會，社群。" data-speed="200">
+				<span class="msg say" data-msg="你好，我是名煜。是個前後端工程師。目前主要以 Ruby on Rails做網站開發。平常興趣是上網、享受美食、在家發懶。也會參與研討會，社群。" data-speed="100">
 				</span>
 			</div>
 		</section>
@@ -113,7 +115,7 @@
 							</a>
 						</div>
 						<h5>魚菜共生 - 網站</h5>
-						<a href="web_avata.html" class="readMore">瞭解更多</a>
+						<a href="web_avata.html" target="_blank" class="readMore">瞭解更多</a>
 					</div>
 				</li>
 				<li class="web">
@@ -124,7 +126,7 @@
 							</a>
 						</div>
 						<h5>派特網 - 網站</h5>
-						<a href="web_wowapet.html" class="readMore">瞭解更多</a>
+						<a href="web_wowapet.html" target="_blank" class="readMore">瞭解更多</a>
 					</div>
 				</li>
 				<li class="web">
@@ -135,7 +137,7 @@
 							</a>
 						</div>
 						<h5>咬我啊 - 網站</h5>
-						<a href="web_bite.html" class="readMore">瞭解更多</a>
+						<a href="web_bite.html" target="_blank" class="readMore">瞭解更多</a>
 					</div>
 				</li>
 
@@ -219,10 +221,11 @@
 				</li>
 			</ul>
 		</section>
-		<section class="content">
+		<section class="content share">
 			<h3>文章分享 - 待更新</h3>
 			<label class="close" for="resume_close"></label>
 			<div></div>
+			<p class="description">這邊分享我的一些實作，記錄...等文章。</p>
 		</section>
 		<section class="content">
 			<h3>聯絡我 - 待更新</h3>
@@ -250,7 +253,7 @@
 	</div>
 	<script>
 	$(function(){
-		sayMsg();indexSlide();portfolio();
+		sayMsg();indexSlide();portfolio();rwd_index();
 	})
 	</script>
 </body>
