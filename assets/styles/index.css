@@ -685,6 +685,41 @@
 	display: block;
 	margin:15px auto;
 }
+
+.blog .close{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+.blog .close:after,.blog .close:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 2px;
+	background: #000;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.blog .close:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 2px;
+	background: #000;
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
 /**/
 
 
