@@ -4,6 +4,16 @@
 		width: 50%;
 	}
 }
+@media screen and (min-width: 160px) and (max-width: 1024px){
+	.contact ul li{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.contact ul li:first-child{
+		padding-bottom: 20px;
+		border-bottom: 1px dashed #bbb;
+	}
+}
 @media screen and (min-width: 160px) and (max-width: 420px){
 	.profile .flag{
 		height: 25%;

@@ -105,6 +105,11 @@
 		background: #000;
 		vertical-align: middle;
 	}
+	.social .box{
+		display: inline-block;
+		width: 95%;
+		background: #000;
+	}
 	.social a{
 		margin-right: 5px;
 		display: inline-block;

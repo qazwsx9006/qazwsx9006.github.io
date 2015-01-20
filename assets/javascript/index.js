@@ -102,7 +102,7 @@ function mail_check(){
 		if(submit){
 			var message="寄件者："+$name.val()+"。<br\/>"+
 						"信箱："+$email.val()+"。<br\/>"+
-						"內容"+$message.val()+"。<br\/>";
+						"內容："+$message.val()+"。<br\/>";
 			var subject=$subject.val();
 
 			$(this).val('傳送中');
@@ -119,6 +119,12 @@ function mail_check(){
 			  $('#submit').val('送出');
 			  $('#submit')[0].disabled=false;
 			  $('#submit').addClass('submit');
+
+			  var $form=$('#submit').parent('.form');
+				$form.find('#subject').val('');
+				$form.find('#name').val('');
+				$form.find('#email').val('');
+				$form.find('#message').val('');
 			});
 			 
 			request.fail(function( jqXHR, textStatus ) {
