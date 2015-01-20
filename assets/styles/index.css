@@ -123,7 +123,7 @@
 	}
 	.fb-like{
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: bottom;
 	}
 	.social .fb_a{
 		background: #4676b2;
