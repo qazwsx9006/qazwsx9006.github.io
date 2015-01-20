@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1">
 	<title>I'm Tseng Mingyu</title>
 	<link href="assets/styles/reset.css" media="screen" rel="stylesheet" />
-	<link href='//fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/styles/index.css" rel="stylesheet">
 	<link href="assets/styles/rwd.css" rel="stylesheet" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&sensor=false"></script>
 	<script src="assets/javascript/index.js"></script>
 
     <meta name="description" content="這是有關我的個人網路履歷表！歡迎來參觀選購。多謝。感恩。"/>
@@ -222,15 +223,63 @@
 			</ul>
 		</section>
 		<section class="content share">
-			<h3>文章分享 - 待更新</h3>
+			<h3>文章分享</h3>
 			<label class="close" for="resume_close"></label>
 			<div></div>
 			<p class="description">這邊分享我的一些實作，記錄...等文章。</p>
+			<ul class="article">
+				<li>
+					<span></span>
+					<a href="web_avata.html" target="_blank">
+						<div class="photo">
+							<img src="assets/images/web1.jpg" alt="">
+						</div>
+						<h5>作品分享 - 魚菜共生</h5>
+						<span>2015-01-18</span>
+					</a>
+				</li>
+				<li>
+					<span></span>
+					<a href="web_wowapet.html" target="_blank">
+						<div class="photo">
+							<img src="assets/images/web2.png" alt="">
+						</div>
+						<h5>作品分享 - 派特網</h5>
+						<span>2015-01-18</span>
+					</a>
+				</li>
+				<li>
+					<span></span>
+					<a href="web_bite.html" target="_blank">
+						<div class="photo">
+							<img src="assets/images/web3.jpg" alt="">
+						</div>
+						<h5>作品分享 - 咬我啊</h5>
+						<span>2015-01-18</span>
+					</a>
+				</li>
+			</ul>
 		</section>
-		<section class="content">
-			<h3>聯絡我 - 待更新</h3>
+		<section class="content contact">
+			<h3>聯絡我</h3>
 			<label class="close" for="resume_close"></label>
 			<div></div>
+			<ul>
+				<li class="part1">
+					<h5>我在臺北</h5>
+					<div id="map-canvas"></div>
+				</li>
+				<li class="part2">
+					<h5>聯絡我</h5>
+					<div class="form">
+						<input id="subject" type="text" placeholder="主旨">
+						<input id="name" type="text" placeholder="姓名">
+						<input id="email" type="text" placeholder="電子信箱">
+						<textarea id="message" rows="10" placeholder="想說什麼？"></textarea>
+						<input type="submit" class="submit" value="送出" id="submit">
+					</div>
+				</li>
+			</ul>
 		</section>
 		<section id="flags">
 			<div class="flag">
@@ -253,7 +302,7 @@
 	</div>
 	<script>
 	$(function(){
-		sayMsg();indexSlide();portfolio();rwd_index();
+		sayMsg();indexSlide();portfolio();rwd_index();mail_check();
 	})
 	</script>
 </body>

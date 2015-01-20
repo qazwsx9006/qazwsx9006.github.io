@@ -14,6 +14,39 @@
 		opacity: .2;
 	}
 }
+@media screen and (min-width: 160px) and (max-width: 570px){
+	.share .article li{
+		width: 100%;
+		text-align: left;
+		position: relative;
+	}
+	.share .article li > span{
+		display: none;
+	}
+	.share .article li .photo{
+		display: inline-block;
+		width: 30%;
+		padding-top: 30%;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 5px;
+		vertical-align: middle;
+	}
+	.share .article li h5{
+		text-align: left;
+		font-size: 3rem;
+		display: inline-block;
+		width: 65%;
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+	.share .article li a span{
+		position: absolute;
+		bottom:0;
+		right:10px;
+		font-size: 2rem;
+	}
+}
 
 @media screen and (min-width: 160px) and (max-width: 750px){
 	.my_info{
