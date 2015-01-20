@@ -124,6 +124,7 @@
 	.fb-like{
 		display: inline-block;
 		vertical-align: bottom;
+		overflow: hidden;
 	}
 	.social .fb_a{
 		background: #4676b2;
