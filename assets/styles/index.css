@@ -522,8 +522,8 @@
 	.skillTree li:nth-child(n+2) .circle > span{
 		display: inline-block;
 		background: #36211c;
-		width: 40%;
-		padding-top:40%;
+		width: 45%;
+		padding-top:45%;
 		border-radius: 50%;
 		position: relative;
 		-webkit-transform: translateY(-50%);
