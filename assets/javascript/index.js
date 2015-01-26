@@ -135,6 +135,78 @@ function mail_check(){
 	});
 }
 
+function resumeRotate(){
+	var $menu = $('.resume').find('.menu');
+	$menu.find('li').click(function(){
+		$menu.find('li').removeClass('active');
+		$(this).addClass('active');
+		if($(this).index()==1){
+			$('.skillTree').attr('data-show','true');
+			$('.skillTree').addClass('rotateY');
+			$('.life').addClass('rotateY');
+			skillCircle();
+		}else{
+			$('.skillTree').attr('data-show','false');
+			$('.skillTree').removeClass('rotateY');
+			$('.life').removeClass('rotateY');
+		}
+	});
+
+}
+
+function skillCircle(){
+	eachCircle();
+	$('.profile>section').on("scroll", function(){
+		eachCircle();
+	});
+
+	function eachCircle(){
+		if($('.skillTree').attr('data-show')=="false"){
+			return;
+		}
+		var scroll_top = $(this).scrollTop(),
+			window_height = $(window).height(),
+			scroll_bottom = scroll_top+window_height;
+		$('.circle').each(function(){
+			var element_top=$(this).offset().top,
+				element_bottom=element_top+$(this).height()/2;
+			if(scroll_bottom>element_bottom){
+				var ratio = $(this).attr('data-ratio');
+				if(ratio>50){
+					var degree= ((ratio-50)*3.6)-180;
+					$(this).find('.right').css({
+					    "-webkit-transform": "rotate(0deg)",
+					    "-moz-transform": "rotate(0deg)",
+					    "-ms-transform": "rotate(0deg)",
+					    "-o-transform": "rotate(0deg)",
+					    "transform": "rotate(0deg)"
+					});
+					$(this).find('.left').delay(2000).queue(function(){
+						$(this).css({
+						    "-webkit-transform": "rotate("+degree+"deg)",
+						    "-moz-transform": "rotate("+degree+"deg)",
+						    "-ms-transform": "rotate("+degree+"deg)",
+						    "-o-transform": "rotate("+degree+"deg)",
+						    "transform": "rotate("+degree+"deg)"
+						});
+					})
+
+				}else{
+					var degree= ((ratio)*3.6)-180;
+					$(this).find('.right').css({
+					    "-webkit-transform": "rotate("+degree+"deg)",
+					    "-moz-transform": "rotate("+degree+"deg)",
+					    "-ms-transform": "rotate("+degree+"deg)",
+					    "-o-transform": "rotate("+degree+"deg)",
+					    "transform": "rotate("+degree+"deg)"
+					});
+				}
+			}
+		});
+	}
+}
+
+
 
 
 function initialize() {

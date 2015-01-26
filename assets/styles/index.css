@@ -267,10 +267,94 @@
 		-o-transform: rotate(-135deg);
 		transform: rotate(-135deg);
 	}
+
+	
+
+
+	.resume .menu{
+		text-align: center;
+		padding: 10px 10px 0 10px;
+		background: #d8cdbb;
+		margin-bottom: 10px;
+	}
+	.resume .menu li:hover,.resume .menu .active{
+		background: #e64a3b;
+	}
+	.resume .menu li{
+		display: inline-block;
+		font-size: 2rem;
+		background: rgba(39, 36, 37, 0.3);
+		padding: 8px 10px;
+		border-radius: 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		color: #fff;
+		transition:.3s;
+		position: relative;
+	}
+	.resume .menu li:first-child:before{
+		content: "{";
+		display: inline-block;
+		color: #3f3f3f;
+		position: absolute;
+		top: 0;
+		right: 120%;
+		font-size: 4rem;
+	}
+	.resume .menu li:last-child:after{
+		content: "}";
+		display: inline-block;
+		color: #3f3f3f;
+		position: absolute;
+		top: 0;
+		left: 120%;
+		font-size: 4rem;
+	}
+	.profile .timeLineBox{
+		position: relative;
+	}
 	.profile .timeLine{
 		width: 100%;
 		margin: 0 auto;
-		position: relative;
+		position: absolute;
+		left: 0;
+		top: 0;
+		/*display: none;*/
+		transition:.3s;
+	    -webkit-perspective: 1500px;
+	    -moz-perspective: 1500px;
+	    -ms-perspective: 1500px;
+	    -o-perspective: 1500px;
+	    perspective: 1500px;
+	}
+	.profile .timeLine.skillTree{
+		-webkit-transform: rotateY(90deg);
+		-moz-transform: rotateY(90deg);
+		-ms-transform: rotateY(90deg);
+		-o-transform: rotateY(90deg);
+		transform: rotateY(90deg);
+	}
+	.profile .timeLine.life{
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	.profile .timeLine.skillTree.rotateY{
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	.profile .timeLine.life.rotateY{
+		-webkit-transform: rotateY(-90deg);
+		-moz-transform: rotateY(-90deg);
+		-ms-transform: rotateY(-90deg);
+		-o-transform: rotateY(-90deg);
+		transform: rotateY(-90deg);
 	}
 	.profile .timeLine:before{
 		content: '';
@@ -419,8 +503,103 @@
 		border-width: 5px 20px 25px 0;
 		border-color: transparent #9abfa6 transparent transparent;
 	}
+	.skillTree .top_pic{
+		margin-bottom: 70px;
+	}
+	.skillTree li:nth-child(2n+2) h4{
+		margin-left: 47%;
+		position: absolute;
+		font-size: 4rem;
+		margin-top: 0px;
+	}
+	.skillTree li:nth-child(2n+3) h4{
+		font-size: 4rem;
+	}
+	.skillTree li:nth-child(2n+2) .circle{
+		text-align: right;
+	}
+	.skillTree li:nth-child(n+2) .circle > span{
+		display: inline-block;
+		background: #36211c;
+		width: 40%;
+		padding-top:40%;
+		border-radius: 50%;
+		position: relative;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		box-shadow: inset 0 0 0 8px #cbb2a8; 
+	}
+	.skillTree li:nth-child(n+2) .circle span div{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+	}
+	.skillTree li:nth-child(2n+2) .circle span div div{
 
-
+	}
+	.skillTree li:nth-child(n+2) .circle span div.rightbox{
+		left: 50%;
+	}
+	.skillTree li:nth-child(n+2) .circle span div div{
+		width: 100%;
+	    -ms-transform-origin: 0% 50%; 
+	    -webkit-transform-origin: 0% 50%; 
+	    -moz-transform-origin: 0% 50%; 
+	    -o-transform-origin: 0% 50%; 
+	    transform-origin: 0% 50%;
+	    transition:2s linear;
+	}
+	.skillTree li:nth-child(n+2) .circle span div div.right{
+	    -webkit-transform: rotate(-180deg);
+	    -moz-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	    -o-transform: rotate(-180deg);
+	    transform: rotate(-180deg);
+	}
+	.skillTree li:nth-child(n+2) .circle span div div.left{
+	    -ms-transform-origin: 100% 50%; 
+	    -webkit-transform-origin: 100% 50%; 
+	    -moz-transform-origin: 100% 50%; 
+	    -o-transform-origin: 100% 50%; 
+	    transform-origin: 100% 50%;
+	    -webkit-transform: rotate(-180deg);
+	    -moz-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	    -o-transform: rotate(-180deg);
+	    transform: rotate(-180deg);
+	}
+	.skillTree li:nth-child(n+2) .circle span div .circleLine{
+		width: 200%;
+		border:10px solid #e7573d;
+		border-radius: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+		position: absolute;
+	}
+	.skillTree li:nth-child(n+2) .circle span div.right .circleLine{
+		left: -100%;
+	}
+	.skillTree li:nth-child(n+2) .circle span span{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform:translate(-50%,-50%);
+		-moz-transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%);
+		-o-transform:translate(-50%,-50%);
+		transform:translate(-50%,-50%);
+		color: #fff;
+		font-size: 2rem;
+	}
 
 	.portfolio .filter{
 		text-align: center;
